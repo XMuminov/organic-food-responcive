@@ -413,9 +413,16 @@ body {
    display: flex;
    align-items: center;
    padding: 40px 59px;
+   transition: all 0.3s ease-in-out;
 }
 .item-best-service:not(:last-child) {
    margin: 0 0 20px 0;
+}
+.item-best-service:hover {
+   background-color: #f3fbf8;
+}
+.item-best-service:hover .service-img {
+   background-color: #fff;
 }
 .service-img {
    min-width: 80px;
@@ -426,12 +433,6 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
-}
-.item-order {
-   background-color: #f3fbf8;
-}
-.img-service {
-  background-color: #fff;
 }
 .service-link {
    color: #222222;
@@ -450,10 +451,36 @@ body {
    line-height: 143%;
    font-size: 14px;
 }
-.item-best-service-str {
+.best-button {
    max-width: 500px;
    display: flex;
    justify-content: center;
+}
+.item-best-service-str {
+   width: 56px;
+   height: 56px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   background-color: #fff;
+   transition: all 0.3s ease;
+}
+.item-best-service-str:hover {
+  cursor: pointer;
+  background-color: #09A66D;
+}
+.item-best-service-str:hover
+.icon-img1 {
+   display: none;
+}
+.item-best-service-str:hover
+.icon-img2 {
+   display: block;
+}
+.icon-img2 {
+   transform: rotate(90deg);
+   display: none;
 }
 .best-body-imges {
  flex: 0 0 50%;
